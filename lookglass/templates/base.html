@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>{% block titulo %} Look Glass | {% endblock titulo %}</title> 
+
+<link href="/media/css/bootstrap.min.css" rel="stylesheet">
+<link href="/media/css/bootstrap-responsive.css" rel="stylesheet" >
+<script src="/media/js/bootstrap.js"></script>
+<script src="/media/js/jquery-1.7.1.js"></script>
+
+  <style>
+      body {
+          padding-top: 70px;
+      }
+     p {
+          margin-left: 136px;
+    }
+        
+    </style>
+
+
+</head>
+
+<body>
+
+
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://www.mdbrasil.com.br" title="Ir para o Site da MD Brasil">Site MD Brasil</a>
+    </div>
+
+    
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/" title="Voltar para Opções">Home</a></li>
+        <li><a href="#" title="Verifica IP na Blacklist da MD Brasil">Lookup IP</a></li>
+  
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="ex.: 11.7.40.0/24">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" title="Materiais de Palestras">Ficheiros</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Teste <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</div>
+
+
+<div align="center" >
+<!--	<img alt="mdbrasil" src="{{ MEDIA_URL }}mdbrasil_logo.png" width="28%"> -->
+	<img alt="mdbrasil" src="/media/mdbrasil_logo.png" width="28%">  
+
+<br>
+	<font color="gray" style="font-size: xx-large;">MD Brasil TI e Telecom &reg;</font> 
+</div>
+
+<hr width="80%">
+
+{% block conteudo %}
+
+{% endblock conteudo %}
+
+
+<hr width="80%">
+</body>
+</head>
+</html>
